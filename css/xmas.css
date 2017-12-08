@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+.left{ float:left;}
+.ct{ width:100%; background:url(../images/bg.jpg) scroll; margin:0 auto; }
+.ct .page_container {width:200%; position:absolute; top:115; left:0; z-index:10;}/*飘雪*/
+
+/******************************* zhuanpan 开始*******************************************/
+.clear{clear:both;}
+
+/* 弹窗样式 */
+#gray{width:100%;height:100%;background:rgba(0,0,0,0.4);position:fixed;top:0px; display:none; z-index:9999999;}
+
+.popup{
+    width:auto;
+	height:auto;
+	position:fixed;
+	z-index:100000000;
+	max-width:500px;
+	display:none;
+}
+.popup .min{width:auto; height:auto;padding:10px;}
+#hw_tanc,#hw_tanc01,#hw_tanc02,#hw_tanc03  { width:100%; height:100%; position:absolute; top:0; left:0; cursor:pointer; text-align:center;}
+#hw_tanc img { width:95.1%;}
+#hw_tanc01,#hw_tanc02,#hw_tanc03  { display:none;}
+.ms_tancab { margin:0 auto; padding-bottom:10%; position:relative; border-radius:5px; background-color:#fff; font-family:Arial, Helvetica, sans-serif; display:inline-block;}
+.ms_tancab .guanbi{ position:absolute; right:3%; top:4%; font-size:20px; cursor:pointer}
+.ms_tancab h3 { font-size:24px; color:#000; line-height:32px; text-align:center; width:80%; margin-left:10%; margin-top:36px; margin-bottom:0px; float:left;}
+.ms_tancab p {
+	width:60%; 
+	margin-left:20.0%; 
+	height:24px;
+	font-size:16px;
+	position:relative;
+	line-height:24px;
+	margin-top:6px;
+	top:70%;
+	color:#aaa;}	
+.ms_tancab .mc_tancaa_01 { 
+	width:60%; 
+	margin-left:20.0%; 
+	height:32px;
+	border-radius:5px;
+	background:none; 
+	box-sizing:border-box;
+	margin-top:12px;
+	padding:0 6px; 
+	outline:none; 
+	font-size:16px;
+	text-align:center;
+	border:1px solid #666;
+	color:#333;}
+.ms_tancab .mc_tancaa_02 { 
+	width:60%; 
+	margin-left:20.0%; 
+	height:32px;
+	border-radius:5px;
+	background:none; 
+	box-sizing:border-box; 
+	margin-top:12px;
+	padding:0 6px; 
+	outline:none; 
+	font-size:16px;
+	text-align:center;
+	border:1px solid #666;
+	color:#333;}
+.ms_tancab .mc_tancaa_03 { 
+	width:60%; 
+	margin-left:20.0%; 
+	height:32px;
+	border-radius:5px;
+	background:#a9021c; 
+	box-sizing:border-box; 
+	margin-top:12px;
+	padding:0 6px; 
+	outline:none; 
+	font-size:16px;
+	text-align:center;
+	border:1px solid #9e031b;
+	cursor:pointer;
+	color:#fff;}
+.ms_tancab .mc_tancaa_04 { 
+	width:60%; 
+	margin-left:20.0%; 
+	height:32px;
+	border-radius:5px;
+	background:#a9021c; 
+	box-sizing:border-box; 
+	padding:0 6px; 
+	outline:none; 
+	font-size:16px;
+	text-align:center;
+	border:1px solid #9e031b;
+	cursor:pointer;
+	color:#fff;}	
+			
+
+/* 大转盘样式 */
+.banner{display:block;width:95%;margin-left:auto;margin-right:auto;margin-bottom: 20px;}
+.banner .turnplate{display:block;width:100%;position:relative;}
+.banner .turnplate canvas.item{width:100%;}
+.banner .turnplate img.pointer{position:absolute;width:31.5%;height:42.5%;left:34.6%;top:23%; cursor:pointer;}
+
+
+.ms_halloween { width:100%;}
+.ms_halloween .hw_top { width:100%; overflow:hidden;}
+.ms_halloween .hw_top img { width:100%;}
+/* hw_acctive */
+.ms_halloween .hw_acctive { max-width:1200px; margin:0 auto;}
+.ms_halloween .hw_acctive .acctive_left { width:56%; float:left; margin-top:80px;}
+.ms_halloween .hw_acctive h2 {  font-size:32px; color:#fff; line-height:40px; margin:12px 0;}
+.ms_halloween .hw_acctive .share_hw h2 { font-family:Arial, Helvetica, sans-serif;}
+.ms_halloween .hw_acctive h2 span { font-size:42px; color:#fbba00; font-weight:bold;}
+.ms_halloween .hw_acctive .acctive_left p { font-size:18px; color:#fff; width:80%;}
+.ms_halloween .hw_acctive .acctive_left p span {color:#fff; font-size:12px;}
+.ms_halloween .hw_acctive .acctive_left .list { margin:24px 0; display:inline-block; width:100%;}
+.ms_halloween .hw_acctive .acctive_left .list ul li { width:100%; float:left;}
+.ms_halloween .hw_acctive .acctive_left .list ul li img { float:left; width:56px; margin-right:12px;}
+.ms_halloween .hw_acctive .acctive_left .list ul li h3 { font-size:30px; line-height:56px;}
+.ms_halloween .hw_acctive .acctive_left .list ul li h3.huang {color:#fbba00;}
+.ms_halloween .hw_acctive .acctive_left .list ul li h3.zi {color:#fbba00;}
+.ms_halloween .hw_acctive .share_hw { float:left;}
+.ms_halloween .hw_acctive .share_hw .share { width:100%; margin-top:12px;}
+.ms_halloween .hw_acctive .share_hw .share ul li{ float:left; margin-right:5px;}
+.ms_halloween .hw_acctive .acctive_right { width:46%; float:right; padding-bottom:44%; position:relative; margin:60px 0; right:5%; z-index:999;}
+.ms_halloween .hw_acctive .acctive_right .acctive_right_main { position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden;}
+
+/* hw_listc */
+.hw_list { width:100%; margin:0 auto; background-color:#000; padding-top:24px;}
+.hw_list ul{ max-width:1224px; margin:0 auto; display:block;}
+.hw_list ul li { width:23%; margin:14px 1%; float:left; position:relative;}
+.hw_list ul li a img { width:100%;}
+.hw_list ul li .off_info { width:40%; position:absolute; top:0; left:0;}
+.hw_list ul li .off_info img { width:100%;}
+.hw_list ul li a.buy { 
+    width:86%; 
+	position:absolute; 
+	top:86%; 
+	left:7%; 
+	color:#f9971c; 
+	padding-left:4%; 
+	line-height:42px; 
+	font-size:20px;
+	text-align:center; 
+	height:42px; 
+	border-radius:5px; 
+	background:#240532 url(../images_halloween/hw_pageb.png) 12px center no-repeat; 
+	display:block;
+	border:1px solid #240532;
+	-webkit-transition:color 0.5s ease,background-color 0.5s ease,border-color 0.5s ease,box-shadow 0.5s ease ;
+	transition:color 0.5s ease,background-color 0.5s ease,border-color 0.5s ease,box-shadow 0.5s ease;
+	}	
+.hw_list ul li:hover a img{ box-shadow:0 5px 8px rgba(51,51,51,0.3);}	
+.hw_list ul li:hover a.buy{ color:#fff; background-color:#3a0054; border-color:#f9971c;}
+.hw_list .hw_winner {max-width:1200px; margin:0 auto; position:relative;}
+.hw_list .hw_list_txt {width:50%; float:left; position:relative;}
+.hw_list .hw_list_txt h2{font-family: 'catwomanregular'; font-size:30px; color:#fff; background:#000; position:relative; height:52px; line-height:52px; display:inline-block; margin-top:36px; border-radius:5px; padding-left:110px; padding-right:16px;}
+.hw_list .hw_list_txt h2.winnera::before { position:absolute; top:-20px; left:0; width:110px; height:72px; content:''; background:url(../images_halloween/hw_pageb01.png) left top no-repeat;}
+.hw_list .hw_list_txt h2.winnerb::before { position:absolute; top:-20px; left:0; width:110px; height:72px; content:''; background:url(../images_halloween/hw_pageb02.png) left top no-repeat;}
+.hw_list .hw_list_txt p{ width:100%; font-size:18px; color:#fff; line-height:20px; margin:20px 0 28px 0;}
+.hw_list .hw_list_txt p span{color:#fff; font-size:12px;}
+.hw_list .hw_shopmore { width:100%; text-align:center; padding:16px 0 16px 0;}
+.hw_list .hw_shopmore img { width:260px;}
+
+/* winners */
+#winners_list{overflow:hidden;height:80px; max-width:580px; position:relative; margin:20px 0 28px 0;}
+#winners_list ul { width:100%; display:inline-block;}
+#winners_list ul li { width:100%; margin:0; font-size:18px; color:#fff; display:inline-block; line-height:20px; padding:6px 0;}
+
+/* hw_foot */
+.hw_foot { width:100%; margin-bottom:-24px; overflow:hidden;}	
+.hw_foot img { width:1920px; position:relative; left:50%; margin-left:-960px;}
+/******************************* zhuanpan 结束*******************************************/
+.ms_halloween .hw_acctive{ position:relative;}
+.ms_halloween .hw_acctive .pc{ position:absolute; display:block; left:5%; bottom:0; z-index:9}
+
+.ct .mc_ad{ display:none;}
+.ct .part1{ max-width:1280px; min-height:300px; background:#fff; margin:0 auto; border-radius:50px; border:10px solid #028c58; text-align:center;}
+.ct .part1 .laoren{ display:none;}
+.ct .part1 .tl{ width:100%;}
+.ct .part1 .tl .biaoti{ max-width:100%; margin-top:40px;}
+.ct .part1 .tl a img{ margin-top:20px; margin-bottom:20px; position:relative; z-index:999}
+.ct .part1 .bt{ width:100%; position:relative; z-index:999}
+.ct .part1 .bt a img{ max-width:86%;}
+.ct .rules{ max-width:1200px; margin:40px auto 0; text-align:center;}
+.ct .rules ol{ width:84%; margin:22px auto 0; position:relative; z-index:99}
+.ct .rules ol li{ font-size:20px; line-height:36px; list-style-type:decimal; text-align:left; font-size:18px; line-height:32px; font-weight:300; color:#fff;}
+.ct .bottom{ width:100%; margin-top:-50px;}
+.ct .bottom img{ max-width:100%; }
+
+@media screen and (max-width:1024px){
+	.ct .page_container { width:100%; left:0;}
+	
+	.ms_halloween .hw_acctive .pc{ width:50%; left:9%;}
+	.ms_halloween .hw_acctive .acctive_right{ right:2%;}
+	.ct .part1{ width:90%;  border:8px solid #028c58;}
+	.ct .part1 .tl h1{ font-size:30px; line-height:46px; margin-top:25px;}
+	}
+@media screen and (max-width:768px){
+	
+	}
+@media screen and (max-width:640px){
+	.ms_halloween .hw_acctive .pc{ display:none;}
+	.ms_halloween .hw_acctive .acctive_right { width:84%; margin:24px 0; margin-right:8%; padding-bottom:80%; right:0}
+	
+	.ct .mc_ad{ display:block; text-align:center; padding-top:35px;}
+	
+	.ct .part1{ width:92%; min-height:200px; border-radius:15px; border:4px solid #028c58; position:relative; margin-top:80px;}
+	.ct .part1 .laoren{ display:block; position:absolute; top:-100px; left:30%;}
+	.ct .part1 .tl .biaoti{ max-width:98%; margin-top:30px;}
+	.ct .part1 .tl a img{ width:50%;}
+	.ct .part1 .bt a img{ max-width:94%;}
+	
+	.ct .rules{ margin-top:30px;}
+	.ct .rules img{ width:46%; margin-top:0px; margin-bottom:0px;}
+	.ct .rules ol{ width:80%;}
+	.ct .bottom{margin-top:-10px;}
+	}
+@media screen and (max-width:375px){
+	
+	}
+@media screen and (max-width:360px){
+	.ct .part1 .bt a img{ margin-top:15px;}
+	.ct .part1{ min-height:150px;}
+	}
+@media screen and (max-width:320px){
+	.ct .rules ol li{ font-size:16px; line-height:24px;}
+	
+	
+	}

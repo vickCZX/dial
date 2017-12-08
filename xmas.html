@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=no" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+<link href="http://freetypography.com/2014/12/07/free-font-sunday-font/" rel="stylesheet">
+
+<title>Qottle_xmas</title>
+
+<link href="css/common.css" type="text/css" rel="stylesheet"/>
+<link href="css/xmas.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src='js/jquery-1.9.1.min.js'></script>
+
+<link href="css/sweetalert.css" type="text/css" rel="stylesheet"/>
+<script  type="text/javascript"src="js/sweetalert.min.js"></script>
+<script type="text/javascript" src="js/awardRotate.js"></script>
+<script type="text/javascript" src="js/zhuanpan.js"></script>
+<script type="text/javascript" src="js/jquery.let_it_snow.js"></script>
+
+</head>
+
+<body>
+<!--header-->
+<div class="head">
+    <div class="head_top_d"><div class="head_top">
+        <span><img src="images/top_1.png" alt="">20% off <span class="your">your</span> first order </span> <span>|</span>
+        <span><img src="images/top_2.png" alt="">12-month warranty</span>
+        <span>
+        	<p class="login"><a href=""><img src="images/top_3.png" alt="">LOGIN</a></p>
+            <div class="cart_wap">
+            	<a href=""><img src="images/top_4.png" alt=""><span>MY CART</span></a>
+                <span class="cart">0</span>
+            </div>
+        </span>
+    </div></div>
+
+    <div class="head_nav">
+    	<div class="logo">
+        	<a href=""><img src="images/logo.png" /></a>
+        </div>
+         <div class="top_nav">
+             <ul>
+                 <li><a href="">Shop</a></li>
+                 <li><a href="">Create</a>
+                    <ul>
+                        <li></li>
+                    </ul>
+                 </li>
+
+                 <li><a href="">support</a></li>
+                 <li><a href="">About Us</a></li>
+             </ul>
+         </div>
+         <div class="nav-bar-phone">
+                     <div class="nav-phonelist">
+                        <span></span><span></span><span></span>
+                     </div>
+                     <ul id="nav">
+                         <li><a href="#">Shop</a></li>
+                         <li><a href="#">Customization</a></li>
+                         <li><a href="#">Blog</a></li>
+                         <li><a href="#">Support</a></li>
+                         <li><a href="#">About Us</a></li>
+                     </ul>
+         </div>
+    </div>
+</div>
+<!--header end-->
+<div class="ct">
+	
+    <!--雪花开始效果-->
+    <div class="page_container">
+		<canvas class="snow"></canvas>
+	</div>
+    <script type="text/javascript">
+	$(document).ready( function() {
+		$("canvas.snow").let_it_snow({
+			windPower: 3,
+			speed: 1.5
+		});
+	});
+	</script>
+    <!--雪花结束-->
+    
+    <div class="mc_ad">
+    	<img src="images/wenzi.png" alt="" />
+    </div>
+    
+    <div id="gray"></div>
+    <div class="popup" id="popup">	
+        <div class="min">
+        
+             <div class="ms_tancab">
+             	<div class="guanbi" href="">X</div>
+                <h3>Sorry, please sign in or register  first.</h3>
+                <input type="text" class="mc_tancaa_01" placeholder="Enter Your Email">
+                <input type="password" class="mc_tancaa_02" placeholder="Password">
+                <input type="button" class="mc_tancaa_03" id="guanbi" value="Sign in">
+                <p>Not signed up yet?</p>
+                <input type="button" class="mc_tancaa_04" value="Register" onclick="document.location='https://www.qottle.com/members';">
+             </div>
+        
+        </div>
+    </div>
+    <div class="ms_halloween">
+    	<div class="hw_acctive">
+           
+           <img class="pc" src="images/sdlr.png" alt="" />
+           
+           <div class="acctive_right">
+               <div class="acctive_right_main">
+                    <img src="images_halloween/1.png" id="shan-img" style="display:none;" />
+                    <img src="images_halloween/2.png" id="sorry-img" style="display:none;" />
+                    <div class="banner">
+                        <div class="turnplate" style="background-image:url(images_halloween/turnplate-bg.png);background-size:100% 100%;">
+                            <canvas class="item" id="wheelcanvas" width="422px" height="422px"></canvas>
+                            <img class="pointer" src="images_halloween/turnplate-pointer.png"/>
+                        </div>
+                    </div>
+               </div>
+               <div id="hw_tanc">
+                   <img src="images_halloween/turnplate-bg01.png">
+               </div>
+               <div id="hw_tanc01">
+               </div>
+               <div id="hw_tanc02">
+               </div>
+               <div id="hw_tanc03">
+               </div>
+           </div>
+           
+           <div class="clear-fix"></div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+	//窗口效果
+	//点击登录class为tc 显示
+	$("#hw_tanc").click(function(){
+		$("#gray").show();
+		$("#popup").show();//查找ID为popup的DIV show()显示#gray
+		tc_center();
+	});
+	//点击关闭按钮
+	$("#guanbi").click(function(){
+		$("#gray").hide();
+		$("#hw_tanc").hide();
+		$("#popup").hide();//查找ID为popup的DIV hide()隐藏
+	})
+	$('.pointer').click(function (){
+		$("#hw_tanc01").show();
+		})
+	$('#hw_tanc01').click(function (){
+		$("#hw_tanc01").hide();
+		swal({
+				title: "Try again!",
+				imageUrl: "images_halloween/hw_pagea_09.png",
+				html: true,
+			});
+		})	
+	$('#hw_tanc02').click(function (){
+		$("#hw_tanc03").show();
+		swal({
+			title: "You've already spinned the wheel!",
+			imageUrl: "images_halloween/hw_pagea_10.png",
+			html: true,
+		});
+		})			
+	//窗口水平居中
+	$(window).resize(function(){
+		tc_center();
+	});
+	
+	function tc_center(){
+		var _top=($(window).height()-$(".popup").height())/2;
+		var _left=($(window).width()-$(".popup").width())/2;
+		
+		$(".popup").css({top:_top,left:_left});
+	}	
+	</script>
+    <script type="text/javascript">
+	$(document).ready(function(){ 
+	
+		$(".top_nav").mousedown(function(e){ 
+			$(this).css("cursor","move");//改变鼠标指针的形状 
+			var offset = $(this).offset();//DIV在页面的位置 
+			var x = e.pageX - offset.left;//获得鼠标指针离DIV元素左边界的距离 
+			var y = e.pageY - offset.top;//获得鼠标指针离DIV元素上边界的距离 
+			$(document).bind("mousemove",function(ev){ //绑定鼠标的移动事件，因为光标在DIV元素外面也要有效果，所以要用doucment的事件，而不用DIV元素的事件 
+			
+				$(".popup").stop();//加上这个之后 
+				
+				var _x = ev.pageX - x;//获得X轴方向移动的值 
+				var _y = ev.pageY - y;//获得Y轴方向移动的值 
+			
+				$(".popup").animate({left:_x+"px",top:_y+"px"},10); 
+			}); 
+	
+		}); 
+	
+		$(document).mouseup(function() { 
+			$(".popup").css("cursor","default"); 
+			$(this).unbind("mousemove"); 
+		});
+	}) 
+
+		var speed=40 
+		var winners_list=document.getElementById("winners_list"); 
+		var winners_listb=document.getElementById("winners_listb"); 
+		var winners_lista=document.getElementById("winners_lista"); 
+		winners_listb.innerHTML=winners_lista.innerHTML 
+		function Marquee(){ 
+		if(winners_listb.offsetTop-winners_list.scrollTop<=0) 
+		  winners_list.scrollTop-=winners_lista.offsetHeight 
+		else{ 
+		  winners_list.scrollTop++ 
+		} 
+		} 
+		var MyMar=setInterval(Marquee,speed) 
+		winners_list.onmouseover=function() {clearInterval(MyMar)} 
+		winners_list.onmouseout=function() {MyMar=setInterval(Marquee,speed)} 
+	</script>
+    
+    <div class="part1">
+    	<div class="laoren"><img src="images/laoren.png" alt="" /></div>
+    	<div class="tl">
+        	<center><img class="biaoti" src="images/tl1.png" alt="" /></center>
+            <a href="https://www.qottle.com/create"><img src="images/but1.png" alt="" /></a>
+        </div>
+        <div class="bt">
+        	<a href="https://www.qottle.com/create"><img src="images/qottle.png" alt="" /></a>
+        </div>
+    </div>
+    <div class="rules">
+    	<img src="images/tl2.png" alt="" />
+        <ol>
+        	<li>US only.</li>
+            <li>Players must log into their qottle accounts in order to play (or create one if they haven’t registered yet!).</li>
+            <li>Prizes include water bottle, tumbler in customized and non-customized design.</li>
+            <li>Prizes and winners are chosen randomly by qottle.</li>
+            <li>Product prize winners will be notified via email before December25th, 2017.</li>
+            <li>Game coupons may be used on qottle Christmas Sale: <a style="color:#fff;" href="https://www.qottle.com/holiday-gift-ideas">https://www.qottle.com/holiday-gift-ideas</a> between December 1st and December 25th, 2017.</li>
+            <li>Coupons won can only be used at the official qottle website.</li>
+            <li>Coupons may be used with all products (but do not cover shipping fees and tax).</li>
+            <!--<li>You may check the coupons you have won in "My Rewards".</li>-->
+            <li>Coupons may be selected and used upon check-out once you have chosen your items.</li>
+            <li>One coupon per order.</li>
+            <li>qottle reserves all rights of final explanation.</li>
+        </ol>
+    </div>
+    <div class="bottom"><img src="images/bg1.png" alt=""></div>
+    
+</div>
+<!--foot-->
+<div class="foot_wap">
+    <div class="foot">
+        <div class="foot_left">
+
+            <dl>
+                <dt>ABOUT US</dt>
+                <dd><a href=""> Our Brand</a></dd>
+                <dd><a href="">Membership</a></dd>
+                <dd><a href="">Wholesale</a></dd>
+                <dd><a href="">Privacy Policy</a></dd>   
+            </dl>
+            <dl>
+                <dt>SUPPORT</dt>
+                <dd><a href=""> Contact Us</a></dd>
+                <dd><a href="">My Orders</a></dd>
+                <dd><a href="">Warranty</a></dd>
+                <dd><a href="">Returns</a></dd>   
+                <dd><a href="">Survey</a></dd> 
+                <dd><a href="https://www.qottle.com/ebook">E-book</a></dd>  
+            </dl>  
+
+        </div>
+        <div class="foot_right">
+            <h2>SUBSCRIBE</h2>
+            <p>Access exclusive offers, news, and more.</p>
+            <input class="input_sc" type="text" placeholder="Enter your email address" />
+            <input class="input_bu" type="button" value="SUBMIT"/>
+            <dl>
+            	<dd class="tubiao">
+                	<span><a href="https://www.facebook.com/qottle/"><img class="im_1" src="images/Facebook.png" /><img class="im_2" src="images/Facebook_1.png" /></a></span>
+                    <span><a href="https://twitter.com/qottle_official"><img class="im_1" src="images/Twitter.png" /><img class="im_2" src="images/Twitter_1.png" /></a></span>
+                    <span><a href="https://www.youtube.com/channel/UCgYLePre45Urf9RVb_Ge2Jg"><img class="im_1" src="images/Youtube.png" /><img class="im_2" src="images/Youtube_1.png" /></a></span>
+                    <span><a href="https://www.instagram.com/qottle/ "><img class="im_1" src="images/Instagram.png" /><img class="im_2" src="images/Instagram_1.png" /></a></span>         
+                </dd>
+            </dl>
+            <script>
+                $(function(){
+					$('.im_2').hide();
+					$('.tubiao span a').stop().hover(function(){
+						$(this).children('.im_1').hide();
+						$(this).children('.im_2').show();
+					},function(){
+						$(this).children('.im_2').hide();
+						$(this).children('.im_1').show();
+						})
+				})
+            </script>
+        </div>
+    </div>
+</div>
+<!--foot end-->
+<!--关闭弹窗-->
+<script type="text/javascript">
+	$(document).ready( function() {
+		$(".ms_tancab .guanbi").click(function(){
+			$("#popup").hide();
+			$("#gray").hide()
+			
+			})
+			
+	});
+	function aa(){
+		$("#wowo").hide();
+		$(".sweet-overlay").hide()
+		}
+	</script>
+<!--关闭弹窗-->
+</body>
+</html>
